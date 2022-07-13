@@ -30,10 +30,7 @@ export class FormularioComponent implements OnInit {
     let passwordDigitado = (<HTMLInputElement>document.getElementById("password")).value
     if(emailDigitado === email && passwordDigitado === password){
       display = "none"
-      setTimeout(function(){
-             window.alert("Bem vindo ao sistema!") //vou configurar o ambiente do artista
-      },2000)
-
+      window.alert("Bem vindo ao sistema!") //vou configurar o ambiente do artista
     } else {
       this.mostrarErro()
     }
