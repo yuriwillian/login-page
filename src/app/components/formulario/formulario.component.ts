@@ -31,7 +31,6 @@ export class FormularioComponent implements OnInit {
     if(emailDigitado === email && passwordDigitado === password){
       window.alert("Bem vindo ao sistema!") //vou configurar o ambiente do artista
     } else {
-      window.alert("Email ou senha invalidos!!") //vou fazer uma div aparecer para melhorar o UX
       this.mostrarErro()
     }
   }
