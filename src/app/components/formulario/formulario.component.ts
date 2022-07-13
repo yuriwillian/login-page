@@ -12,6 +12,17 @@ export class FormularioComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  mostrarErro(): void {
+    this.display = "block"
+    let janelaErro = (<HTMLInputElement>document.getElementById("erros"))
+    janelaErro.innerHTML = `
+      <p>Usuario ou senha <strong>invalidos!</strong><p>
+    `
+  }
+
+  display: string = "none"
+
   validaLogin(): void {
     const email = "admin@gmail.com"
     const password = "123"
@@ -21,6 +32,7 @@ export class FormularioComponent implements OnInit {
       window.alert("Bem vindo ao sistema!") //vou configurar o ambiente do artista
     } else {
       window.alert("Email ou senha invalidos!!") //vou fazer uma div aparecer para melhorar o UX
+      this.mostrarErro()
     }
   }
 

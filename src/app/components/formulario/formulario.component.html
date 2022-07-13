@@ -10,7 +10,14 @@
     <br>
     <button (click)="validaLogin()">Entrar</button>
     <br>
+    <div class="erros" id="erros" [ngStyle]="{'display': display}">
+
+    </div>
+    <br>
+
     <app-redes-sociais></app-redes-sociais>
+    <br>
+
     <p>Não possui uma conta? <a href="">Clique aqui para registrar-se</a></p>
 </form>
 
