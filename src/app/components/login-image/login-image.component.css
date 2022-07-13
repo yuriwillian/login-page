@@ -1,0 +1,9 @@
+img{
+    float: right;
+}
+
+@media (max-width: 850px) {
+    img{
+        display: none;
+    }
+}
